@@ -5,15 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Two</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <form action="search">
-        <label for="userSearch">Choose a colour:</label>
-        <input type="text" placeholder="Please enter your color">
-        <button>Go!</button>
-    </form>
+    <!-- NICOLE -- landing page -->
+    <header>
+        <div class="wrapper">
+            <h1>Name of Site</h1>
+            <p>description of generator purpose</p>
 
-    <div class="container" id="container"></div>
+            <!-- button to bring user to generator section -->
+            <!-- <button class="bringDown">let's go!</button> -->
+        </div>
+    </header>
+
+    <main>
+        <!-- NICOLE -- picture/desc section -->
+        <section class="picturesAndDesc">
+            <div class="wrapper">
+                <p>How to incorporate this into your life...</p>
+            </div>
+        </section>
+
+
+            <!-- YEMISI -- generator section -->
+        <section class="paletteGenerator">
+            <div class="wrapper">
+                <form action="search">
+                    <label for="userSearch">Choose a colour:</label>
+                    <input type="text" placeholder="Please enter your color">
+                    <button>Go!</button>
+                </form>
+
+                <p>description of how to use generator</p>
+
+                <!-- div to append the colour palette to -->
+                <div class="container" id="container"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- copyright section -->
+    <footer>
+        <div wrapper="wrapper">
+            <p>Copyright 2021 © Juno College</p>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="scripts/script.js"></script>
+
 </body>
-<script src="scripts/script.js"></script>
 </html>
