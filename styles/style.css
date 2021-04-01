@@ -1,0 +1,25 @@
+.paletteGenerator {
+  background-color: #C5D0CC;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+}
+
+.paletteGo {
+  font-family: "Archivo Black", sans-serif;
+  background-color: #68867B;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */
