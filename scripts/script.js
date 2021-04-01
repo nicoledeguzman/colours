@@ -33,7 +33,6 @@ colourApp.getColour = (userInput) => {
     })
 }
 
-
 colourApp.buttonEvent = () => {
 button.addEventListener('click',function(event) {
     console.log('button clicked');
@@ -48,7 +47,6 @@ button.addEventListener('click',function(event) {
     // display user colour choice on the page
     });
 }
-
 
 colourApp.init = () => {
     console.log("running");

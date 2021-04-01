@@ -1,0 +1,26 @@
+@import "./variables";
+
+.paletteGenerator {
+    background-color: $background2;
+}
+
+p {
+    font-family: $bodyFont;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+}
+
+label {
+    font-family: $bodyFont;
+}
+
+.paletteGo {
+    font-family: $headerFont;
+    background-color: $accent;
+    color: $fontColour2;
+}
