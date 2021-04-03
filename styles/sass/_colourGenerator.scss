@@ -1,26 +1,79 @@
 @import "./variables";
+  
 
 .paletteGenerator {
     background-color: $background2;
+    padding: 200px 40px;
 }
 
-p {
+.paletteGenerator p {
     font-family: $bodyFont;
+ 
+}
+
+.paletteGenerator .description  {
+    font-size: 15px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
 }
 
 input[type=text] {
-    width: 100%;
+    // width: 45%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 0px 8px 10px;
     border: none;
 }
 
 label {
     font-family: $bodyFont;
+    font-size: 20px;
 }
 
+// button
 .paletteGo {
     font-family: $headerFont;
     background-color: $accent;
     color: $fontColour2;
+    border: none;
+    box-shadow: 0px transparent;
+    padding: 10px;
+    margin: 10px;
+
+    &:hover {
+        background: $fontColour2;
+        color: $accent; 
+    }
 }
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+// Media Queries
+@media (max-width: 635px) {
+    .container {
+        flex-wrap: nowrap;
+        
+    }
+}
+
+@media (max-width: 495px) {
+   input[type=text] {
+       width: 70%;
+   }
+}
+
+@media (max-width: 477px) {
+    input[type=text] {
+        width: 50%;
+    }
+ }
+ 

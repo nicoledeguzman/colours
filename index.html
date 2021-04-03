@@ -7,7 +7,7 @@
     <title>Project Two</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sass/style.css">
 </head>
 <body>
     <!-- NICOLE -- landing page -->
@@ -35,11 +35,14 @@
             <div class="wrapper">
                 <form action="search">
                     <label for="userSearch">Choose a colour:</label>
-                    <input type="text" placeholder="Please enter your color">
+                    <input type="text">
                     <button class="paletteGo">Go!</button>
                 </form>
 
-                <p>description of how to use generator</p>
+                <p class="description">
+                    <!-- (description of how to use generator) -->
+                    Please enter a hex code to generate a colour palette
+                </p>
 
                 <!-- div to append the colour palette to -->
                 <div class="container" id="container"></div>
