@@ -29,6 +29,7 @@ colourApp.getColour = (userInput) => {
             div.style.height = '100px';
             div.style.width = '100px';
             div.style.backgroundColor = hexValue;
+    
         }
     })
 }
