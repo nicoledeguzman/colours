@@ -83,6 +83,7 @@ span.heart {
     color: transparent;
     position: fixed;
     z-index: 0;
+    cursor: default;
 }
 
 .backgroundText p:first-of-type {
@@ -92,7 +93,7 @@ span.heart {
 }
 
 .backgroundText p:nth-of-type(2n) {
-    -webkit-text-stroke: 5px #A2D0E67E;
+    -webkit-text-stroke: 5px #FFFFCC7E;
     bottom: 50px;
     left: 900px;
 }
