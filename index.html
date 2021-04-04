@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- NICOLE -- landing page -->
+    <!-- landing page -->
     <header>
         <div class="wrapper">
             <h1 class="front">colours</h1>
@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <!-- NICOLE -- picture/desc section -->
+        <!-- picture/desc section -->
         <section class="picturesAndDesc">
             <div class="gallery">
                 <ul class="galleryLeft">
@@ -71,20 +71,30 @@
         </section>
 
 
-            <!-- YEMISI -- generator section -->
+            <!-- generator section -->
         <section class="paletteGenerator">
             <div class="wrapper">
                 <form action="search">
+                    <label for="schemeMode">Choose a scheme:</label>
+                    <div class="select">
+                        <select name="schemeMode" id="schemeMode">
+                            <option value="monochrome">monochrome</option>
+                            <option value="monochrome-dark">monochrome-dark</option>
+                            <option value="monochrome-light">monochrome-light</option>
+                            <option value="analogic">analogic</option>
+                            <option value="complement">complement</option>
+                            <option value="analogic-complement">analogic-complement</option>
+                        </select>
+                        <p class="arrow">⬇</p>
+                    </div>
                     <label for="userSearch">Choose a colour:</label>
                     <input type="text">
-                    <button class="paletteGo">Go!</button>
+                    <p class="description">
+                        <!-- (description of how to use generator) -->
+                        Please enter a hex code to generate a colour palette (e.g., FFFFFF without "#").
+                    </p>
+                    <button class="paletteGo">GO!</button>
                 </form>
-
-                <p class="description">
-                    <!-- (description of how to use generator) -->
-                    Please enter a hex code to generate a colour palette
-                </p>
-
                 <!-- div to append the colour palette to -->
                 <div class="container" id="container"></div>
             </div>

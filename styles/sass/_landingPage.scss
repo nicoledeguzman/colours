@@ -17,6 +17,7 @@ header div.wrapper {
 header h1 {
     font-family: $headerFont;
     text-transform: uppercase;
+    line-height: 95px;
     color: $fontColour2;
     margin: 0;
     padding: 0;
@@ -31,8 +32,8 @@ header h1 {
     color: #ffffccbb;
     position: absolute;
     z-index: 2;
-    top: 340px;
-    right: 80px;
+    top: 370px;
+    right: 85px;
     opacity: 0.75;
 }
 
@@ -40,8 +41,8 @@ header h1 {
     color: $fontColour1;
     position: absolute;
     z-index: 1;
-    top: 355px;
-    right: 95px;
+    top: 390px;
+    right: 105px;
 }
 
 // hover transitions
