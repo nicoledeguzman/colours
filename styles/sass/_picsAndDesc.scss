@@ -1,0 +1,84 @@
+@import "./variables";
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    color: $fontColour2;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery p {
+    font-size: 25px;
+}
+
+.galleryLeft,
+.galleryRight {
+    line-height: 0;
+}
+
+.galleryLeft {
+    width: 40vw;
+}
+
+.galleryRight {
+    width: 60vw;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    position: relative;
+}
+
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img {
+    width: 100%
+}
+
+.overlay {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.75s;
+}
+
+.overlay:hover,
+.overlay:focus {
+    opacity: 0.6;
+}
+
+.descBox {
+    color: $fontColour1;
+    background-color: #ffffffd1;
+    width: 29rem;
+    padding: 15px;
+    position: absolute;
+    z-index: 15;
+    left: 330px;
+    top: 695px;
+        h2 {
+            font-family: $headerFont;
+            font-size: 30px;
+            margin: 15px;
+        }
+        p {
+            font-size: 16px;
+            margin: 15px;
+            color: black;
+        }
+}

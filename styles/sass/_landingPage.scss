@@ -10,8 +10,9 @@ header div.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // position: relative;
 }
+
+// header title
 
 header h1 {
     font-family: $headerFont;
@@ -21,14 +22,15 @@ header h1 {
     padding: 0;
     font-size: 8rem;
     align-self: flex-end;
-    z-index: 10;
-    stroke: 1px black;
+    z-index: 3;
+    transition: color 1s ease-in-out;
+    cursor: default;
 }
 
 .behind1 {
-    color: #ac9d9b;
+    color: #ffffccbb;
     position: absolute;
-    z-index: 8;
+    z-index: 2;
     top: 340px;
     right: 80px;
     opacity: 0.75;
@@ -37,16 +39,66 @@ header h1 {
 .behind2 {
     color: $fontColour1;
     position: absolute;
-    z-index: 6;
+    z-index: 1;
     top: 355px;
     right: 95px;
 }
 
-header p {
+// hover transitions
+
+.front:hover {
+    color: #FAB847;
+}
+
+.behind1:hover {
+    color: #A2D0E6D4;
+}
+
+.behind2:hover {
+    color: #7D9F72;
+}
+
+// THE MAKERSSSS!!!
+
+p.toTheSide {
+    color: $accent;
     font-size: 18px;
     text-transform: uppercase;
     rotate: 270deg;
     position: fixed;
-    right: -140px;
-    bottom: 135px;
+    right: -125px;
+    bottom: 155px;
+    z-index: 100; // yes, because i'm extra
+}
+
+span.heart {
+    font-size: 24px;
+}
+
+// Background text
+
+.backgroundText p {
+    font-size: 15rem;
+    font-family: $headerFont;   
+    color: transparent;
+    position: fixed;
+    z-index: 0;
+}
+
+.backgroundText p:first-of-type {
+    -webkit-text-stroke: 5px #D6AC6356;
+    top: -250px;
+    left: -300px;
+}
+
+.backgroundText p:nth-of-type(2n) {
+    -webkit-text-stroke: 5px #A2D0E67E;
+    bottom: 50px;
+    left: 900px;
+}
+
+.backgroundText p:last-child {
+    -webkit-text-stroke: 5px #7D9F724C;
+    top: 250px;
+    left: -50px;
 }
