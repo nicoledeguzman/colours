@@ -20,10 +20,9 @@ colourApp.getColour = (userSelection, userInput) => {
         return res.json();
     }).then(res => {
         
-        // const backgroundColour = res.colors[0].hex.value;
         const container = document.getElementById('container');
         container.innerHTML = '';
-        // container.style.backgroundColor = backgroundColour;
+        
         const colors = res.colors;
         for (const color of colors) {
             const colourPalette = document.createElement('p');
@@ -40,7 +39,7 @@ colourApp.getColour = (userSelection, userInput) => {
 colourApp.buttonEvent = () => {
     button.addEventListener('click', function(e) {
         e.preventDefault();
-        // colourApp.getColour();
+       
         // when button is clicked
         // fetch user colour choice from input from API
         const userSelection = document.querySelector('#schemeMode');
