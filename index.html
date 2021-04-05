@@ -10,72 +10,91 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- NICOLE -- landing page -->
+    <!-- landing page -->
     <header>
         <div class="wrapper">
-            <h1>Name of Site</h1>
-            <h1 class="behind1">Name of Site</h1>
-            <h1 class="behind2">Name of Site</h1>
+            <h1 class="front">colours</h1>
+            <h1 class="behind1">colours</h1>
+            <h1 class="behind2">colours</h1>
 
-            <p>made with love by yemisi & nicole</p>
-            <!-- button to bring user to generator section -->
-            <!-- <button class="bringDown">let's go!</button> -->
+            <p class="toTheSide">made with <span class=sr-only>love</span><span aria-hidden="true" class="heart">♡</span> by yemisi & nicole</p>
+
+            <!-- background text -->
+            <div aria-hidden="true" class="backgroundText">
+                <p>COLOURS</p>
+                <p>COLOURS</p>
+                <p>COLOURS</p>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- NICOLE -- picture/desc section -->
+        <!-- picture/desc section -->
         <section class="picturesAndDesc">
-            <div class="wrapper">
-                <p>How to incorporate this into your life...</p>
-            </div>
             <div class="gallery">
-                <div class="galleryLeft">
-                    <div class="img1">
-                        <img src="">
+                <ul class="galleryLeft">
+                    <li class="img1">
+                        <img src="./assets/pics-and-desc-image-1.jpg" alt="two paint palettes with assorted colours">
                         <div class="overlay">
-                            <p>text</p>
+                            <p>paint it.</p>
                         </div>
-                    </div>
-                    <div class="img2">
-                        <img src="">
+                    </li>
+                    <li class="img2">
+                        <img src="./assets/pics-and-desc-image-2.jpg" alt="four models dressed in designer clothing">
                         <div class="overlay">
-                            <p>text</p>
+                            <p>style it.</p>
                         </div>
-                    </div>
+                    </li>
+                </ul>
+                <div class="descBox">
+                    <h2>It's more than what we see...</h2>
+                    <p>Colour affects us much more than we often think; evoking emotions and thoughts, evoking nostalgia.</p>
+                    <p>It allows for more life and creativity.</p>
+                    <p>So <em>allow us</em> to introduce to you a way to incorporate this facet of art and life into your own.</p>
+                    <p>The generator was ours to make, but the colours you see are yours to create with.</p>
                 </div>
-                <div class="galleryRight">
-                    <div class="img3">
-                        <img src="">
+                <ul class="galleryRight">
+                    <li class="img3">
+                        <img src="./assets/pics-and-desc-image-3.jpg" alt="photo of a home decorated with different shades in a yellow colour palette">
                         <div class="overlay">
-                            <p>text</p>
+                            <p>decorate it.</p>
                         </div>
-                    </div>
-                    <div class="img4">
-                        <img src="">
+                    </li>
+                    <li class="img4">
+                        <img src="./assets/pics-and-desc-image-4.jpg" alt="variations of design layouts using vibrant colours">
                         <div class="overlay">
-                            <p>text</p>
+                            <p>design it.</p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
 
-            <!-- YEMISI -- generator section -->
+            <!-- generator section -->
         <section class="paletteGenerator">
             <div class="wrapper">
                 <form action="search">
+                    <label for="schemeMode">Choose a scheme:</label>
+                    <div class="select">
+                        <select name="schemeMode" id="schemeMode">
+                            <option value="monochrome">monochrome</option>
+                            <option value="monochrome-dark">monochrome-dark</option>
+                            <option value="monochrome-light">monochrome-light</option>
+                            <option value="analogic">analogic</option>
+                            <option value="complement">complement</option>
+                            <option value="analogic-complement">analogic-complement</option>
+                        </select>
+                        <p class="arrow">⬇</p>
+                    </div>
                     <label for="userSearch">Choose a colour:</label>
                     <input type="text">
-                    <button class="paletteGo">Go!</button>
+                    <p class="description">
+                        <!-- (description of how to use generator) -->
+                        Please enter a hex code to generate a colour palette (e.g., FFFFFF without "#").
+                    </p>
+                    <button class="paletteGo">GO!</button>
                 </form>
-
-                <p class="description">
-                    <!-- (description of how to use generator) -->
-                    Please enter a hex code to generate a colour palette
-                </p>
-
                 <!-- div to append the colour palette to -->
                 <div class="container" id="container"></div>
             </div>
@@ -85,7 +104,7 @@
     <!-- copyright section -->
     <footer>
         <div wrapper="wrapper">
-            <p>Copyright 2021 © Juno College</p>
+            <p class="copyright">Copyright 2021 © Juno College</p>
         </div>
     </footer>
 

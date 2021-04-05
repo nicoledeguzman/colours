@@ -1,0 +1,180 @@
+@import "./variables";
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    color: $fontColour2;
+    background-color: $background2;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery p {
+    font-size: 25px;
+}
+
+.galleryLeft,
+.galleryRight {
+    line-height: 0;
+}
+
+.galleryLeft {
+    width: 40vw;
+}
+
+.galleryRight {
+    width: 60vw;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    position: relative;
+}
+
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img {
+    width: 100%
+}
+
+.overlay {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.75s;
+}
+
+.overlay:hover,
+.overlay:focus {
+    opacity: 0.6;
+}
+
+.descBox {
+    color: $fontColour1;
+    background-color: #ffffffd1;
+    width: 29rem;
+    padding: 15px;
+    position: absolute;
+    z-index: 15;
+    left: 330px;
+    top: 695px;
+        h2 {
+            font-family: $headerFont;
+            font-size: 30px;
+            margin: 15px;
+        }
+        p {
+            font-size: 16px;
+            margin: 15px;
+            color: black;
+        }
+}
+
+// media queries
+
+@media (max-width: 1240px) {
+
+    .img1 img,
+    .img4 img {
+        height: 215px;
+    }
+
+    .img2 img,
+    .img3 img {
+        height: 95px;
+    }
+
+    .descBox {
+    position: initial;
+    max-height: 310px;
+        h2 {
+            font-size: 1rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .galleryLeft,
+    .galleryRight {
+        width: 98vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gallery .img1 img,
+    .gallery .img4 img {
+        width: calc (100vw / 2.8);
+        height: initial;
+    }
+
+    .gallery .img2 img,
+    .gallery .img3 img {
+        width: calc (100vw / 6.8);
+        height: initial;
+    }
+
+    .descBox {
+        width: 100%;
+    }
+
+    .gallery p {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 933px) {
+
+    .gallery .img1 img,
+    .gallery .img2 img,
+    .gallery .img3 img,
+    .gallery .img4 img {
+        height: 171px;
+    }
+
+    .img1 img,
+    .img4 img {
+        width: 29vw;
+    }
+
+    .img2 img,
+    .img3 img {
+        width: 69vw;
+    }
+
+}
+
+@media (max-width: 730px) {
+
+    .gallery .img1 img,
+    .gallery .img2 img,
+    .gallery .img3 img,
+    .gallery .img4 img {
+        height: 90px;
+    }
+
+}

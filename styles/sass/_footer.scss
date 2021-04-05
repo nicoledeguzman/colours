@@ -1,0 +1,14 @@
+@import "./variables";
+
+footer {
+    background-color: $background1;
+}
+
+p.copyright {
+    font-family: $headerFont;
+    text-transform: lowercase;
+    color: $fontColour1;
+    padding: 7px;
+    margin: 0 auto;
+    text-align: center;
+}
