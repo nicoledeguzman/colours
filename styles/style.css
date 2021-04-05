@@ -1,6 +1,6 @@
 .paletteGenerator {
   background-color: #C5D0CC;
-  padding: 200px 40px;
+  padding: 200px 0;
 }
 
 .paletteGenerator div.wrapper {
@@ -105,20 +105,8 @@ label {
 
 @media (max-width: 635px) {
   .container {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-
-@media (max-width: 495px) {
-  input[type=text] {
-    width: 70%;
-  }
-}
-
-@media (max-width: 477px) {
-  input[type=text] {
-    width: 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -241,6 +229,31 @@ span.heart {
   left: -50px;
 }
 
+@media (max-width: 850px) {
+  header h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 625px) {
+  header h1 {
+    rotate: 270deg;
+    position: relative;
+    right: -150px;
+    bottom: -65px;
+  }
+  h1.behind1 {
+    position: relative;
+    top: 5px;
+    left: 165px;
+  }
+  h1.behind2 {
+    position: relative;
+    top: -55px;
+    left: 180px;
+  }
+}
+
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,6 +263,7 @@ span.heart {
       -ms-flex-direction: row;
           flex-direction: row;
   color: #FFFFFF;
+  background-color: #C5D0CC;
 }
 
 ul {
@@ -336,6 +350,90 @@ ul {
   font-size: 16px;
   margin: 15px;
   color: black;
+}
+
+@media (max-width: 1240px) {
+  .img1 img,
+  .img4 img {
+    height: 215px;
+  }
+  .img2 img,
+  .img3 img {
+    height: 95px;
+  }
+  .descBox {
+    position: initial;
+    max-height: 310px;
+  }
+  .descBox h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .descBox p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .galleryLeft,
+  .galleryRight {
+    width: 98vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .gallery .img1 img,
+  .gallery .img4 img {
+    width: calc 35.71429vw;
+    height: initial;
+  }
+  .gallery .img2 img,
+  .gallery .img3 img {
+    width: calc 14.70588vw;
+    height: initial;
+  }
+  .descBox {
+    width: 100%;
+  }
+  .gallery p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 933px) {
+  .gallery .img1 img,
+  .gallery .img2 img,
+  .gallery .img3 img,
+  .gallery .img4 img {
+    height: 171px;
+  }
+  .img1 img,
+  .img4 img {
+    width: 29vw;
+  }
+  .img2 img,
+  .img3 img {
+    width: 69vw;
+  }
+}
+
+@media (max-width: 730px) {
+  .gallery .img1 img,
+  .gallery .img2 img,
+  .gallery .img3 img,
+  .gallery .img4 img {
+    height: 90px;
+  }
 }
 
 html {
@@ -582,4 +680,5 @@ html {
 
 body p {
   font-family: 'Roboto', sans-serif;
+  max-width: 100vw;
 }

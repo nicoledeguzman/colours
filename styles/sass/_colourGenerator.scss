@@ -3,7 +3,7 @@
 
 .paletteGenerator {
     background-color: $background2;
-    padding: 200px 40px;
+    padding: 200px 0;
 }
 
 .paletteGenerator div.wrapper {
@@ -88,23 +88,10 @@ label {
 
 }
 
-// Media Queries
+// media queries
+
 @media (max-width: 635px) {
     .container {
-        flex-wrap: nowrap;
-        
+        flex-wrap: wrap;
     }
 }
-
-@media (max-width: 495px) {
-   input[type=text] {
-       width: 70%;
-   }
-}
-
-@media (max-width: 477px) {
-    input[type=text] {
-        width: 50%;
-    }
- }
- 
