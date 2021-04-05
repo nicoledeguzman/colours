@@ -123,6 +123,16 @@ p.copyright {
   text-align: center;
 }
 
+.copyright a {
+  text-decoration: none;
+  color: #665957;
+}
+
+.copyright a:hover,
+.copyright a:focus {
+  color: #FAB847;
+}
+
 header {
   height: 100vh;
   background-color: #C5D0CC;

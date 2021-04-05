@@ -12,3 +12,13 @@ p.copyright {
     margin: 0 auto;
     text-align: center;
 }
+
+.copyright a {
+    text-decoration: none;
+    color: $fontColour1;
+}
+
+.copyright a:hover,
+.copyright a:focus {
+    color: #FAB847;
+}
