@@ -9,17 +9,15 @@ colourApp.init = () => {
 }
 
 colourApp.getColour = (userSelection, userInput) => {
-    const proxyURL = new URL('http://thecolorapi.com/scheme')
-    const url = new URL('http://proxy.hackeryou.com');
+    const url = new URL('http://www.thecolorapi.com/scheme')
     url.search = new URLSearchParams({
-        reqUrl: proxyURL,
-        'params[mode]': userSelection,
-        'params[hex]': userInput
+        'mode': userSelection,
+        'hex': userInput
     })
     fetch(url).then(res => {
         return res.json();
     }).then(res => {
-        
+
         const container = document.getElementById('container');
         container.innerHTML = '';
         
@@ -50,6 +48,5 @@ colourApp.buttonEvent = () => {
         // display user colour choice on the page
     });
 }
-
 
 colourApp.init();
