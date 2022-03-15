@@ -9,7 +9,7 @@ colourApp.init = () => {
 }
 
 colourApp.getColour = (userSelection, userInput) => {
-    const url = new URL('http://www.thecolorapi.com/scheme')
+    const url = new URL('https://www.thecolorapi.com/scheme')
     url.search = new URLSearchParams({
         'mode': userSelection,
         'hex': userInput
